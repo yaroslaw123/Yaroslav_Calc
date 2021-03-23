@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/minus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/fon"
+                android:text="del" />
+
+            <TextView
+                android:id="@+id/zero"
+                style="@style/fon"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/seven"
+                style="@style/fon"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/four"
+                style="@style/fon"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/one"
+                style="@style/fon"
+                android:text="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/fon"
+                android:text="(" />
+
+            <TextView
+                style="@style/fon"
+                android:text="*" />
+
+            <TextView
+                android:id="@+id/eight"
+                style="@style/fon"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/five"
+                style="@style/fon"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/two"
+                style="@style/fon"
+                android:text="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/fon"
+                android:text=")" />
+
+            <TextView
+                style="@style/fon"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/nine"
+                style="@style/fon"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/six"
+                style="@style/fon"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/three"
+                style="@style/fon"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/fon"
+                android:background="#F40707"
+                android:text=","
+                android:textColor="#00BCD4"
+                android:textSize="36sp" />
+
+            <TextView
+                style="@style/fon"
+                android:background="#F40707"
+                android:text=","
+                android:textColor="#00BCD4"
+                android:textSize="36sp" />
+
+            <TextView
+                style="@style/fon"
+                android:background="#EC0B0B"
+                android:text="-"
+                android:textColor="#00BCD4"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/plus"
+                style="@style/fon"
+                android:background="#DF1515"
+                android:text="+"
+                android:textColor="#00BCD4"
+                android:textSize="36sp" />
+
+            <TextView
+                style="@style/fon"
+                android:background="#EC1D0D"
+                android:text="="
+                android:textColor="#00BCD4"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="107dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/fon_text"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/fon_text"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
